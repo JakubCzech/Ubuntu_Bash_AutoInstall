@@ -10,7 +10,8 @@ sudo apt update && sudo apt upgrade -y
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/BryanDollery/remove-snap/main/remove-snap.sh)"
 ###     Base packages install
 sudo apt install -y terminator git vlc gdebi-core rpi-imager apt-transport-https ca-certificates lsb-release curl software-properties-common python3-pip python3-distutils tlp tlp-rdw xdg-desktop-portal-gnome sudo apt install qbittorrent net-tools
-
+### snap packages 
+sudo snap install bitwarden slack
 
 ###     Add repositories
 # 7zip
