@@ -6,6 +6,7 @@
 
 ###     Update and upgrade
 sudo apt update && sudo apt upgrade -y
+sudo snap refresh 
 ###     Base packages install
 sudo apt install -y \
   terminator \
