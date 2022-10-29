@@ -18,7 +18,8 @@ sudo apt install -y \
   tlp tlp-rdw \
   xdg-desktop-portal-gnome \
   qbittorrent \
-  net-tools
+  net-tools \
+  wireguard
 ###     Snap packages 
 sudo snap install bitwarden 
 sudo snap install slack
@@ -54,8 +55,8 @@ sudo apt install -y \
   yubikey-manager yubikey-personalization-gui libpam-yubico libpam-u2f libpam-u2f
 
 ###     Docker add user to docker group
+sudo groupadd docker
 sudo usermod -aG docker ${USER}
-su - ${USER}
 ###     Docker compose install
 mkdir -p ~/.docker/cli-plugins/
 curl -SL https://github.com/docker/compose/releases/download/v2.5.0/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose
