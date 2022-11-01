@@ -43,15 +43,14 @@ sudo add-apt-repository ppa:yubico/stable # Yubico
 sudo apt update
 apt-cache policy docker-ce
 ###     Software install
-sudo apt install -y \
-  docker-ce \
-  veracrypt \
-  virtualbox \
-  virtualbox-ext-pack \
-  balena-etcher-electron \
-  guake \
-  p7zip-full p7zip-rar \
-  yubikey-manager yubikey-personalization-gui libpam-yubico libpam-u2f libpam-u2f
+sudo apt install -y docker-ce
+sudo apt install -y veracrypt
+sudo apt install -y virtualbox
+sudo apt install -y virtualbox-ext-pack
+sudo apt install -y balena-etcher-electron
+sudo apt install -y guake 
+sudo apt install -y p7zip-full p7zip-rar 
+sudo apt install -y yubikey-manager libpam-yubico libpam-u2f libpam-u2f
 
 ###     Docker add user to docker group
 sudo groupadd docker
