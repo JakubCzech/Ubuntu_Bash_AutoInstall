@@ -38,7 +38,6 @@ curl -1sLf 'https://dl.cloudsmith.io/public/balena/etcher/setup.deb.sh' | sudo -
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg # Docker
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo add-apt-repository ppa:unit193/encryption # Veracrypt
-sudo add-apt-repository ppa:linuxuprising/guake # Guake 
 sudo add-apt-repository ppa:yubico/stable # Yubico
 ###     Update repositories
 sudo apt update
