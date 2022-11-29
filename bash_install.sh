@@ -19,7 +19,10 @@ sudo apt install -y \
   xdg-desktop-portal-gnome \
   qbittorrent \
   net-tools \
-  wireguard
+  wireguard \
+  chktex \
+  gnome-tweaks \
+  lm-sensors
 ###     Snap packages 
 sudo snap install bitwarden 
 sudo snap install slack
@@ -59,6 +62,8 @@ sudo usermod -aG docker ${USER}
 mkdir -p ~/.docker/cli-plugins/
 curl -SL https://github.com/docker/compose/releases/download/v2.5.0/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose
 sudo chmod +x ~/.docker/cli-plugins/docker-compose
+
+sudo apt  install -y docker-compose
 ###     Download deb packages
 cd /Downloads
 # Github Desktop
